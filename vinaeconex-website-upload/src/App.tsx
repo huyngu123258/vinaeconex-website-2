@@ -886,7 +886,7 @@ function Footer() {
     <footer className="site-footer">
       <div className="footer-main">
         <div className="footer-brand">
-          <a className="brand footer-logo" href="#home">
+          <a className="brand footer-logo" href={sectionHref('#home')}>
             Vina <span>Econex</span>
           </a>
           <p>
@@ -896,11 +896,11 @@ function Footer() {
         </div>
         <div className="footer-links">
           <h2>Quick Links</h2>
-          <a href="#about">About Us</a>
-          <a href="#services">Services</a>
-          <a href="#products">Products</a>
-          <a href="#factory">Factory Gallery</a>
-          <a href="#customers">Our Customer</a>
+          <a href={sectionHref('#about')}>About Us</a>
+          <a href={sectionHref('#services')}>Services</a>
+          <a href={sectionHref('#products')}>Products</a>
+          <a href={sectionHref('#factory')}>Factory Gallery</a>
+          <a href={sectionHref('#customers')}>Our Customer</a>
         </div>
         <div className="footer-products">
           <h2>Products</h2>
@@ -912,7 +912,7 @@ function Footer() {
         <div className="footer-contact">
           <h2>Contact</h2>
           <a href="mailto:info@vinaeconex.com">info@vinaeconex.com</a>
-          <a href="#contact">Get A Free Quote</a>
+          <a href={sectionHref('#contact')}>Get A Free Quote</a>
         </div>
       </div>
       <div className="footer-bottom">
