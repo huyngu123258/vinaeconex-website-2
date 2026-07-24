@@ -330,29 +330,6 @@ const products: Product[] = [
   },
 ];
 
-const productCommitments = [
-  {
-    title: 'Product Warranty',
-    text: 'Every product comes with comprehensive warranty coverage against manufacturing defects. Our commitment to quality extends beyond delivery.',
-    icon: '/assets/icons/commitment-1.svg',
-  },
-  {
-    title: 'Reliable Delivery',
-    text: 'Established production workflows and logistics support help your orders arrive on schedule and ready for your business timeline.',
-    icon: '/assets/icons/commitment-2.svg',
-  },
-  {
-    title: 'Expert Consultation',
-    text: 'Experienced guidance on fabric, sizing, branding, and production planning helps each custom program move forward cleanly.',
-    icon: '/assets/icons/commitment-3.svg',
-  },
-  {
-    title: 'Global Quality Standards',
-    text: 'Rigorous quality control processes maintain consistent finishing and dependable output across every production run.',
-    icon: '/assets/icons/commitment-4.svg',
-  },
-];
-
 const factoryImages = [
   { src: '/assets/factory-1.webp', alt: 'Packed garments in cartons at Vina Econex factory' },
   { src: '/assets/factory-2.webp', alt: 'Garment sewing production floor' },
@@ -644,23 +621,6 @@ function ProductDetail({ product }: { product: Product }) {
         </div>
 
       </div>
-
-      <section className="product-commitments section-pad">
-        <div className="section-heading reveal product-detail-heading">
-          <h2>Vinaeconex Commitments</h2>
-        </div>
-        <div className="product-commitments-grid">
-          {productCommitments.map((item, index) => (
-            <article className="product-commitment-card reveal" key={item.title}>
-              <span className="commitment-icon">
-                <img src={item.icon} alt="" aria-hidden="true" />
-              </span>
-              <h3>{item.title}</h3>
-              <p>{item.text}</p>
-            </article>
-          ))}
-        </div>
-      </section>
 
       <section className="product-gallery section-pad" aria-label={`${product.title} image gallery`}>
         <div className="product-gallery-grid">
